@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=search" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header-top">
+        <img
+          class="logo"
+          src="images/logo-mercado-liebre.svg"
+          width="360"
+          alt="Logo de MercadoLiebre"
+        />
+        <div class="buscador">
+          <input
+            type="text"
+            name="buscar"
+            placeholder="Buscar productos, marcas y más"
+          />
+          <i class="fa fa-search"></i>
+        </div>
+        <p class="compra-cuotas">
+          <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <a href="#" class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </a>
+
+      <nav class="nav-bar">
+        <ul class="navbar-left">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+
+        <ul class="navbar-right">
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="registro-formulario">
+        <form action="/" method="GET">
+          <h4>Datos Personales</h4>
+          <input type="text" name="name" placeholder="Nombre y Apellido" />
+          <input type="text" name="username" placeholder="Nombre de Usuario" />
+          <input type="email" name="email" placeholder="E-mail" />
+          <h4>Fecha de nacimiento</h4>
+          <input type="date" name="date" />
+          <input type="text" placeholder="Domicilio" />
+          <h4>Perfil de usuario</h4>
+          <div class="perfil-radioboton">
+            <label for="" name="perfil-tipo"
+              ><input type="radio" name="perfil-tipo" id="" />Comprador</label
+            >
+            <label for="" name="perfil-tipo"
+              ><input type="radio" name="perfil-tipo" id="" />Vendedor</label
+            >
+          </div>
+          <h4>Intereses</h4>
+          <div class="perfil-checkboton">
+            <label><input type="checkbox" value="1" />Electro</label><br />
+            <label><input type="checkbox" value="2" />Moda</label><br />
+            <label><input type="checkbox" value="3" />Hogar</label><br />
+            <label><input type="checkbox" value="4" />Jugueteria</label><br />
+            <label><input type="checkbox" value="5" />Vida Sana</label><br />
+          </div>
+          <h4>Foto de perfil</h4>
+          <input type="file">
+          <input type="password" placeholder="Contraseña">
+          <input type="password" placeholder="Confirmar contraseña">
+          <div class="button-contraseña">
+              <button type="reset" class="btn-danger">LIMPIAR</button>
+              <button type="submit" class="btn-success">ENVIAR</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
