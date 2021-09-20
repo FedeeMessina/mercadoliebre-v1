@@ -6,16 +6,16 @@ app.use(express.static("public"));
 
 
  app.get("/", function (req, res) {
-  res.sendFile(path.join(dirname, "/views", "/index.html"))});
+  res.sendFile(path.join(__dirname, "/views", "/index.html"))});
 
 app.get("/login", function (req, res) {
-  res.sendFile(path.join(dirname, "/views", "/login.html"));
+  res.sendFile(path.join(__dirname, "/views", "/login.html"));
 });
 app.get("/register", function (req, res) {
-  res.sendFile(path.join(dirname, "/views", "/register.html"));
+  res.sendFile(path.join(__dirname, "/views", "/register.html"));
 });
 app.post("/register", function (req, res) {
-  res.sendFile(path.join(dirname, "/views", "/register.html"));
+  res.sendFile(path.join(__dirname, "/views", "/register.html"));
 });
 app.post("/", function (req, res) {
   res.sendFile(path.join(__dirname, "views/index.html"));
