@@ -5,8 +5,8 @@ const app = express();
 
 const port = process.env.port || 5000;
 
-const publicPath = path.resolve(__dirname, "./public");
-app.use(express.static(publicPath));
+const publicPath = path.resolve(__dirname, "/public");
+app.use(express.static(public));
 
 app.listen(port, () =>
   console.log("El servidor esta andando perfectamente http://localhost:5000")
