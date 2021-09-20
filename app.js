@@ -13,7 +13,7 @@ app.listen(port, () =>
 );
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/home.html"));
+  res.sendFile(path.resolve(__dirname, "/views/home.html"));
 });
 
 app.get("/register", (req, res) => {
