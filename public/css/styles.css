@@ -164,6 +164,11 @@ main section article i {
   text-align: center;
   font-size: 2em;
   margin-bottom: 10px;
+  transition: color  500ms;
+}
+
+.footer-icons:hover{
+color: gold;
 }
 footer p {
   text-align: center;
